@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Booking</h1>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iure
+        officia, error, quidem nesciunt expedita explicabo beatae quam
+        cupiditate quo pariatur itaque temporibus doloribus est quod suscipit
+        minus aperiam consectetur.
+      </p>
+      <form action="server.php" method="post">
+        <div class="input-group">
+          <label for="firstname">FirstName:</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+        <div class="input-group">
+          <label for="lastname">LastName:</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+        <div class="radio-group">
+          <p>Gender</p>
+          <label for="mail">Mail:</label>
+          <input type="radio" value="mail" id="mail" name="gender" required />
+          <label for="femail">Femail:</label>
+          <input type="radio" value="femail" id="femail" name="gender" />
+        </div>
+        <div class="input-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div class="input-group">
+          <label for="eamil">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-group">
+          <label for="tel">Phone:</label>
+          <input type="tel" id="tel" name="tel" pattern="[0-9]{11}" required />
+        </div>
+        <input type="submit" class="submit" />
+      </form>
+    </div>
+  </body>
+</html>
